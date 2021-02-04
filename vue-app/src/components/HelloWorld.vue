@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <!-- <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -79,8 +79,28 @@
           awesome-vue
         </a>
       </li>
-    </ul>
+    </ul> -->
+    <!-- <vue-friendly-iframe :src="example1Form.src" @load="onLoad"></vue-friendly-iframe> -->
+
+    <!-- <iframe v-on:load="load" src="http://grafana.istio-system.svc.clusters.local:3000/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&from=1612452314751&to=1612452614751&panelId=7" width="450" height="200" frameborder="0"></iframe>
+    <iframe v-on:load="load" src="http://34.69.56.73:15031/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&theme=light&panelId=7" width="450" height="200" frameborder="0"></iframe>
+    <iframe v-on:load="load" src="http://grafana.istio-system:3000/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&theme=light&panelId=902" width="450" height="200" frameborder="0"></iframe> -->
+    <iframe v-on:load="load" src="http://34.69.56.73:15031/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&from=1612452314751&to=1612452614751&panelId=7" width="450" height="200" frameborder="0"></iframe>
+    <iframe v-on:load="load" src="http://34.69.56.73:15031/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&theme=light&panelId=7" width="450" height="200" frameborder="0"></iframe>
+    <iframe v-on:load="load" src="http://34.69.56.73:15031/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&theme=light&panelId=902" width="450" height="200" frameborder="0"></iframe>
+    
+    <!-- <div id="vue-frame">
+    <vue-frame text="grafana.istio-system.svc.clusters.local" url="http://grafana.istio-system.svc.clusters.local:3000/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&from=1612452314751&to=1612452614751&panelId=7" frame="myframe" type="button" class="form-control"></vue-frame>
+    <vue-frame text="34.69.56.73:15031" url="http://34.69.56.73:15031/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&theme=light&panelId=7" frame="myframe" type="a"></vue-frame>
+    <vue-frame text="grafana.istio-system" url="http://grafana.istio-system:3000/grafana/d-solo/vu8e0VWZk/istio-performance-dashboard?orgId=1&refresh=5s&theme=light&panelId=902" frame="myframe" type="a"></vue-frame>
+    
+    <br/>
+
+    <iframe id="myframe" width="100%" height="600"></iframe> -->
+
+    </div>
   </div>
+  
 </template>
 
 <script>
@@ -88,7 +108,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'iframe test'
     }
   }
 }

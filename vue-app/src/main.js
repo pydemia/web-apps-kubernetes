@@ -3,6 +3,23 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueFriendlyIframe from 'vue-friendly-iframe';
+import VueFrame from 'vue-frame'
+
+
+Vue.use(VueFriendlyIframe);
+export default {
+  components: { VueFrame },
+  data () {
+    return { /*...*/ }
+  },
+  methods: {
+		load: function(){
+    	this.iframe.loaded = true;
+    }
+  }
+}
+
 
 Vue.config.productionTip = false
 
